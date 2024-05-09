@@ -1,3 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>Giraffix</PackageId>
+        <IsPackable>true</IsPackable>
+        <PackFrameworkReferences>false</PackFrameworkReferences>
+        <Authors>deccer</Authors>
+        <Company>Graphics Programming</Company>
+        <PackageIconUrl>https://raw.githubusercontent.com/deccer/Giraffix/main/giraffix-icon.png</PackageIconUrl>
+        <PackageProjectUrl>https://github.com/deccer/Giraffix</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/deccer/Giraffix</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\..\Lib\glfw\glfw3.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath>runtimes/win-x64/native/</PackagePath>
+            <Link>runtimes/win-x64/native/glfw3.dll</Link>
+            <Visible>false</Visible>
+        </None>
+        <None Include="..\..\Lib\ktx\ktx.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath>runtimes/win-x64/native/</PackagePath>
+            <Link>runtimes/win-x64/native/ktx.dll</Link>
+            <Visible>false</Visible>
+        </None>
+        <None Include="..\..\Lib\ktx\libktx.so.4.2.1">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <PackagePath>runtimes/linux-x64/native/</PackagePath>
+            <Link>runtimes/linux-x64/native/libktx.so.4.2.1</Link>
+            <InProject>false</InProject>
+        </None>
+    </ItemGroup>
 
 </Project>
