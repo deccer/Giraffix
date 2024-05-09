@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Deployment", "_Deployment", "{8B111ACC-05F0-43B5-B9E6-4E421BFBDEE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Items", "_Items", "{D0BE7E6A-ACE9-402F-B0F7-877B7B46A546}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffix", "Source\Giraffix\Giraffix.csproj", "{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{CB29E346-7BC0-41C5-AA71-45DEE340AC9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{AF0A111F-E8C8-477B-8569-9890B123D21A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloTriangle", "Examples\HelloTriangle\HelloTriangle.csproj", "{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFF6F02C-2A09-42C9-89CD-BF119F9C41A7} = {CB29E346-7BC0-41C5-AA71-45DEE340AC9F}
+		{9FDC41EF-C163-4FBC-8F75-E7D7A64C32FC} = {AF0A111F-E8C8-477B-8569-9890B123D21A}
+	EndGlobalSection
+EndGlobal
